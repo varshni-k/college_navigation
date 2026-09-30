@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173d32" />
+    <meta name="description" content="Directions to Dr. N.G.P. Institute of Technology and an offline guide to AV Hall." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Find your way | N.G.P. Institute of Technology</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#college" aria-label="N.G.P. wayfinding home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>WAYFINDING <span class="brand-divider">/</span> N.G.P.</span>
+      </a>
+      <div class="connection" aria-live="polite">
+        <span class="connection-dot" aria-hidden="true"></span>
+        <span id="connection-label">Checking connection</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="view college-view is-active" id="college" aria-labelledby="college-title">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow"><span>01</span> GET TO CAMPUS</p>
+            <h1 id="college-title">Your way<br />starts here.</h1>
+            <p class="lead">Dr. N.G.P. Institute of Technology</p>
+            <p class="address">Main Road, Kalapatti, Coimbatore,<br />Tamil Nadu 641048</p>
+            <a class="primary-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Dr.%20N.G.P.%20Institute%20of%20Technology%2C%20Main%20Road%2C%20Kalapatti%2C%20Coimbatore%2C%20Tamil%20Nadu%20641048" target="_blank" rel="noopener noreferrer">
+              <span>Get directions to college</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
+            </a>
+            <p class="online-note">Opens Google Maps · Internet required</p>
+            <button class="text-action" id="next-button" type="button">
+              <span>I'm at campus</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" /></svg>
+            </button>
+          </div>
+
+          <div class="campus-art" aria-label="Illustration of the institute entrance">
+            <div class="art-caption"><span>COIMBATORE</span><span>11° N / 77° E</span></div>
+            <svg class="campus-drawing" viewBox="0 0 620 510" role="img" aria-labelledby="campus-art-title">
+              <title id="campus-art-title">A line illustration of a campus building behind the entrance gate</title>
+              <path class="art-sun" d="M416 102a58 58 0 1 0 116 0 58 58 0 0 0-116 0Z" />
+              <path class="art-building" d="M156 278V177l152-87 155 87v101M183 276V190l125-72 127 72v86M210 276v-69l98-56 100 56v69" />
+              <path class="art-windows" d="M244 222h30v54h-30zM291 199h34v77h-34zM345 222h30v54h-30zM212 190h25v24h-25zM378 190h25v24h-25z" />
+              <path class="art-ground" d="M52 392h516M100 392v-97h72v97M448 392v-97h72v97M86 295h99M433 295h100M122 294v-29h27v29M470 294v-29h27v29" />
+              <path class="art-gate" d="M216 392v-77h76v77M329 392v-77h76v77M216 315h189M236 315v77M273 315v77M348 315v77M386 315v77" />
+              <path class="art-path" d="M52 392h516M309 392v96" />
+              <path class="art-tree" d="M75 293c-36 0-44-44-13-58-8-31 32-48 53-22 33-9 50 30 27 51 4 17-10 29-27 29m-12 0v99m438-99c-34 0-42-40-12-55-7-31 32-47 52-21 31-8 48 29 26 49 4 16-9 27-25 27m-14 0v99" />
+              <circle class="art-dot" cx="309" cy="488" r="7" />
+            </svg>
+            <div class="art-footer"><span>SHARP NAGAR</span><span>INSTITUTE OF TECHNOLOGY</span></div>
+          </div>
+        </div>
+
+        <footer class="bottom-note">
+          <span class="note-index">NEXT</span>
+          <span>Once you arrive, follow the on-campus arrows to AV Hall.</span>
+          <span class="offline-stamp"><span aria-hidden="true">●</span> HALL ROUTE WORKS OFFLINE</span>
+        </footer>
+      </section>
+
+      <section class="view hall-view" id="hall" aria-labelledby="hall-title" hidden>
+        <div class="hall-heading">
+          <button class="back-action" id="back-button" type="button" aria-label="Back to college directions">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6" /></svg>
+          </button>
+          <div>
+            <p class="eyebrow"><span>02</span> ON-CAMPUS GUIDE <span class="offline-stamp"><span aria-hidden="true">●</span> AVAILABLE OFFLINE</span></p>
+            <h1 id="hall-title" tabindex="-1">AV Hall <span class="hall-subtitle">/ D Block</span></h1>
+          </div>
+        </div>
+
+        <div class="hall-layout">
+          <section class="route-panel" aria-label="Indoor route diagram">
+            <div class="panel-topline"><span>ROUTE SKETCH</span><span>NOT TO SCALE</span></div>
+            <svg class="route-map" viewBox="0 0 760 360" role="img" aria-labelledby="route-map-title route-map-desc">
+              <title id="route-map-title">Route from the Main Gate to AV Hall</title>
+              <desc id="route-map-desc">Walk straight from the Main Gate to the Break Zone, turn left and continue to D Block, take the lift to the second floor, then turn left to AV Hall.</desc>
+              <path class="map-outline" d="M380 304V220H180V165M180 110H75" />
+              <path class="route-line" d="M380 304V220H180V165V110H75" />
+              <path class="route-progress" id="route-progress" d="M380 304V220H180V165V110H75" />
+              <g class="map-label" transform="translate(380 304)"><circle r="9"/><text x="17" y="5">MAIN GATE</text></g>
+              <g class="map-label" transform="translate(380 220)"><circle r="9"/><text x="15" y="5">BREAK ZONE</text></g>
+              <g class="map-label" transform="translate(180 220)"><circle r="9"/><text x="-17" y="25">D BLOCK</text></g>
+              <g class="map-label lift-label" transform="translate(180 165)"><rect x="-13" y="-16" width="26" height="32" rx="2"/><path d="M-5-5l5-5 5 5M-5 5l5 5 5-5"/><text x="20" y="5">LIFT</text></g>
+              <g class="map-label hall-label" transform="translate(75 110)"><circle r="11"/><text x="0" y="-24" text-anchor="middle">AV HALL</text></g>
+              <g class="you-marker" id="you-marker" transform="translate(380 304)" aria-hidden="true">
+                <circle class="marker-halo" r="20"/><circle class="marker-core" r="7"/>
+                <path class="marker-arrow" d="M0 8V-9m-5 5 5-5 5 5" />
+              </g>
+              <text class="floor-label" x="430" y="285">GROUND FLOOR</text>
+              <text class="floor-label" x="215" y="85">SECOND FLOOR</text>
+            </svg>
+            <div class="map-legend"><span><i class="legend-dot"></i> YOU ARE HERE</span><span><i class="legend-line"></i> INDOOR ROUTE</span></div>
+          </section>
+
+          <section class="step-panel" aria-label="Route instructions">
+            <div class="step-count"><span id="step-number">01</span><span>/ 05</span></div>
+            <div class="step-copy" aria-live="polite" aria-atomic="true">
+              <p class="step-direction" id="step-direction">START HERE</p>
+              <h2 id="step-title">Main Gate</h2>
+              <p id="step-description">Begin at the main gate. Follow the road straight toward the Break Zone.</p>
+            </div>
+            <div class="step-controls">
+              <button class="step-control previous-control" id="previous-step" type="button" aria-label="Previous direction" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6" /></svg>
+              </button>
+              <button class="step-control next-control" id="next-step" type="button">
+                <span>Next</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-6-6 6 6-6 6" /></svg>
+              </button>
+            </div>
+            <p class="offline-footnote"><span aria-hidden="true">●</span> This route is saved on your device.</p>
+          </section>
+        </div>
+
+        <ol class="route-steps" id="route-steps" aria-label="All route stops">
+          <li class="is-current"><span>01</span><span>Main Gate</span></li>
+          <li><span>02</span><span>Break Zone</span></li>
+          <li><span>03</span><span>D Block</span></li>
+          <li><span>04</span><span>Second floor</span></li>
+          <li><span>05</span><span>AV Hall</span></li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
