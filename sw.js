@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ngp-wayfinding-v3';
+const CACHE_NAME = 'ngp-wayfinding-v4';
 const APP_FILES = [
   './',
   './index.html',

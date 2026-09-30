@@ -120,7 +120,7 @@ h1, h2, p { margin-top: 0; }
 .primary-action:hover { background: var(--forest-deep); transform: translateY(-2px); }
 .primary-action svg, .text-action svg, .back-action svg, .step-control svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .online-note { margin: 10px 0 0; color: var(--muted); font-size: 11px; }
-.text-action { margin-top: 37px; padding: 0; display: flex; align-items: center; gap: 10px; border: 0; background: transparent; color: var(--forest); font-size: 13px; font-weight: 700; cursor: pointer; }
+.text-action { min-height: 44px; margin-top: 37px; padding: 0; display: flex; align-items: center; gap: 10px; border: 0; background: transparent; color: var(--forest); font-size: 13px; font-weight: 700; cursor: pointer; }
 .text-action svg { width: 16px; height: 16px; transition: transform 160ms ease; }
 .text-action:hover svg { transform: translateY(3px); }
 
